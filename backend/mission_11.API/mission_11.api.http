@@ -1,0 +1,6 @@
+@mission_11.api_HostAddress = http://localhost:5079
+
+GET {{mission_11.api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
