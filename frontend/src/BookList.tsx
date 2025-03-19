@@ -11,7 +11,11 @@ function BookList(){
 
     useEffect(() => {
         const fetchBooks = async () => {
-            const response = await fetch(`http://localhost:5079/Book?pageLength=${pageSize}&pageNum=${pageNum}`);
+            const response = await fetch(`http://localhost:5079/Book?pageLength=${pageSize}&pageNum=${pageNum}`, 
+            {
+                credentials: "include"
+            }
+        );
             const data = await response.json();
             setBooks(data.books);
             setTotalBooks(data.totalBooks);
