@@ -55,8 +55,8 @@ function BookList(){
                     <li><strong>ISBN: </strong>{b.isbn}</li>
                     <li><strong>Category: </strong>{b.category}</li>
                     <li><strong>Pages: </strong>{b.pageCount}</li>
-                    <li><strong>Price: </strong>{b.price}</li>
-                </ul>
+                    <li><strong>Price: </strong>{b.price.toFixed(2)}</li>
+                    </ul>
             </div>
         </div>
         ))}
