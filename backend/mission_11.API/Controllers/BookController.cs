@@ -7,17 +7,15 @@ namespace mission_11.api.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-
     public class BookController : ControllerBase
     {
-        private BookDbContext _bookContext;
+        private readonly BookDbContext _bookContext;
 
-        // GET
-        public BookController(BookDbContext poop) => _bookContext = poop;
+        public BookController(BookDbContext bookContext) => _bookContext = bookContext;
 
-        public OkObjectResult Get(int pageLength, int pageNum)
+        [HttpGet]
+        public OkObjectResult Get(int pageLength, int pageNum, string? category = "All")
         {
-            // IS414 COOKIES
             HttpContext.Response.Cookies.Append("FavoriteCategory", "Historical", new CookieOptions()
             {
                 HttpOnly = true,
@@ -25,20 +23,39 @@ namespace mission_11.api.Controllers
                 SameSite = SameSiteMode.Strict,
                 Expires = DateTime.Now.AddMinutes(1),
             });
-            
-            var blah = _bookContext.Books
+
+            var query = _bookContext.Books.AsQueryable();
+
+            // Apply category filter if not "All"
+            if (!string.IsNullOrEmpty(category) && category != "All")
+            {
+                query = query.Where(b => b.Category == category);
+            }
+
+            var totalNumBooks = query.Count();
+            var books = query
                 .Skip((pageNum - 1) * pageLength)
                 .Take(pageLength)
                 .ToList();
-            
-            var totalNumBooks = _bookContext.Books.Count();
 
             return Ok(new
             {
-                Books = blah,
+                Books = books,
                 TotalBooks = totalNumBooks
             });
         }
-            
+
+        [HttpGet("categories")]
+        public IActionResult GetCategories()
+        {
+            var categories = _bookContext.Books
+                .Select(b => b.Category)
+                .Where(c => c != null)
+                .Distinct()
+                .ToList();
+
+            return Ok(categories);
+        }
+
     }
 }

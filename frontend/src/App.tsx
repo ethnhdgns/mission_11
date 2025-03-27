@@ -1,7 +1,7 @@
 import './App.css'
-import BookList from './BookList'
+import BookList from './pages/BookList'
 // import CookieConsent from 'react-cookie-consent'
-import Fingerprint from './Fingerprint'
+import Fingerprint from './components/Fingerprint'
 
 function App() {
   return (
