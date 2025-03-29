@@ -1,5 +1,9 @@
-import './App.css'
-import BookList from './BookList'
+import './App.css';
+import { CartProvider } from './context/CartContext';
+import CartPage from './pages/CartPage';
+import BuyPage from './pages/BuyPage';
+import BookList from './pages/BookList';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
