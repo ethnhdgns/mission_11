@@ -13,5 +13,5 @@ public class Books
     public int? ISBN { get; set; }
     public string? Category { get; set; }
     public int? PageCount { get; set; }
-    public int? Price { get; set; }
+    public double? Price { get; set; }
 }
