@@ -1,18 +1,21 @@
 import './App.css'
-import BookList from './pages/BookList'
-// import CookieConsent from 'react-cookie-consent'
-import Fingerprint from './components/Fingerprint'
+import BookList from './BookList'
 
 function App() {
   return (
     <>
-      <BookList/>
-      {/* <CookieConsent>
-        This website used cookies to enhance the user experience.
-      </CookieConsent> */}
-      <Fingerprint/>
+      <CartProvider>
+        <Router>
+          <Routes>
+            <Route path="/" element={<BookList />} />
+            <Route path="/books" element={<BookList />} />
+            <Route path="/buy/:title/:bookID/:price/:author" element={<BuyPage />} />
+            <Route path="/cart" element={<CartPage />} />
+          </Routes>
+        </Router>
+      </CartProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

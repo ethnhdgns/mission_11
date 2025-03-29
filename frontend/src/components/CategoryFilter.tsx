@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'react';
 import './CategoryFilter.css';
 
-function CategoryFilter({
-  selectedCategories,
-  setSelectedCategories,
-}: {
+interface CategoryFilterProps {
   selectedCategories: string[];
-  setSelectedCategories: (categories: string[]) => void;
-}) {
+  setSelectedCategories: React.Dispatch<React.SetStateAction<string[]>>;
+}
+
+function CategoryFilter({ selectedCategories, setSelectedCategories }: CategoryFilterProps) {
   const [categories, setCategories] = useState<string[]>([]);
 
   useEffect(() => {
@@ -36,16 +35,17 @@ function CategoryFilter({
     <div className="category-filter">
       <h5>Book Categories</h5>
       <div className="category-list">
-        {categories.map((c) => (
-          <div key={c} className="category-item">
+        {categories.map((b) => (
+          <div key={b} className="category-item">
             <input
               type="checkbox"
-              id={c}
-              value={c}
+              id={b}
+              value={b}
               className="category-checkbox"
+              checked={selectedCategories.includes(b)}
               onChange={handleCheckboxChange}
             />
-            <label htmlFor={c}>{c}</label>
+            <label htmlFor={b}>{b}</label>
           </div>
         ))}
       </div>
