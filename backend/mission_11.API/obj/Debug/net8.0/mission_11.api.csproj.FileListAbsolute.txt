@@ -76,3 +76,13 @@
 /Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll
 /Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/obj/Debug/net8.0/mission_11.api.sourcelink.json
 /Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/bin/Debug/net8.0/Bookstore.sqlite
+/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/bin/Debug/net8.0/publish/publish/web.config
+/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/bin/Debug/net8.0/publish/web.config
+/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/bin/Debug/net8.0/publish/appsettings.Development.json
+/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/bin/Debug/net8.0/publish/appsettings.json
+/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/bin/Debug/net8.0/publish/mission_11.api.deps.json
+/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/bin/Debug/net8.0/publish/mission_11.api.runtimeconfig.json
+/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/bin/Debug/net8.0/publish/publish/appsettings.Development.json
+/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/bin/Debug/net8.0/publish/publish/appsettings.json
+/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/bin/Debug/net8.0/publish/publish/mission_11.api.deps.json
+/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/bin/Debug/net8.0/publish/publish/mission_11.api.runtimeconfig.json

@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/3e7b4c66-ecde-459a-a54f-8a081773f504/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/Bookstore-Hudgins-backend",
+    "appService.deploySubpath": "backend/mission_11.API/publish"
+}
