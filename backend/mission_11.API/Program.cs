@@ -18,7 +18,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend",
         policy =>
         {
-            policy.AllowAnyOrigin()
+            policy.WithOrigins("https://gentle-sky-02a33331e.6.azurestaticapps.net")
                 .AllowAnyHeader()
                 .AllowAnyMethod();
         }
