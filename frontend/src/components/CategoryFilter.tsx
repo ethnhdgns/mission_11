@@ -12,7 +12,7 @@ function CategoryFilter({ selectedCategories, setSelectedCategories }: CategoryF
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await fetch('http://localhost:5079/Book/GetCategories');
+        const response = await fetch('https://bookstore-hudgins-backend.azurewebsites.net/Book/GetCategories');
         const data = await response.json();
         console.log('Fetched categories:', data);
         setCategories(data);
