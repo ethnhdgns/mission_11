@@ -1,11 +1,6 @@
 /Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/publish/mission_11.api
-/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/publish/publish/web.config
 /Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/publish/appsettings.Development.json
 /Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/publish/appsettings.json
-/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/publish/publish/appsettings.Development.json
-/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/publish/publish/appsettings.json
-/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/publish/publish/mission_11.api.deps.json
-/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/publish/publish/mission_11.api.runtimeconfig.json
 /Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/publish/Bookstore.sqlite
 /Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/publish/mission_11.api.dll
 /Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/publish/mission_11.api.deps.json

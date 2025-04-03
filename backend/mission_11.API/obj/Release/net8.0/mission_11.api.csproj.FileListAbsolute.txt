@@ -76,8 +76,3 @@
 /Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/obj/Release/net8.0/mission_11.api.pdb
 /Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/obj/Release/net8.0/mission_11.api.genruntimeconfig.cache
 /Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/obj/Release/net8.0/ref/mission_11.api.dll
-/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/bin/Release/net8.0/publish/web.config
-/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/bin/Release/net8.0/publish/appsettings.Development.json
-/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/bin/Release/net8.0/publish/appsettings.json
-/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/bin/Release/net8.0/publish/mission_11.api.deps.json
-/Users/ethanhudgins/Desktop/mission_11/backend/mission_11.API/bin/Release/net8.0/publish/mission_11.api.runtimeconfig.json
