@@ -6,7 +6,7 @@ interface FetchBooksResponse {
 }
 
 // const API_URL = 'http://localhost:5079/Book';
-const API_URL = 'https://bookstore-hudgins-backend.azurewebsites.net';
+const API_URL = 'https://bookstore-hudgins-backend.azurewebsites.net/Book';
 
 export const fetchBooks = async (
   pageSize: number,
