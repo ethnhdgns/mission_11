@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace mission_11.api.Controllers
 {
-    [Route("")]
+    [Route("[controller]")]
     [ApiController]
     public class BookController : ControllerBase
     {
