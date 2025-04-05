@@ -51,6 +51,10 @@ function BookCards({ selectedCategories }: { selectedCategories: string[] }) {
                 {p.isbn}
               </li>
               <li>
+                <strong>Classification: </strong>
+                {p.classification}
+              </li>
+              <li>
                 <strong>Category: </strong>
                 {p.category}
               </li>
